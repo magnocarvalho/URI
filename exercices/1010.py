@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 # Cálculo Simples
-n = int(input())
-a = int(input())
-b = float(input())
-m = int(input())
-c = int(input())
-d = float(input())
-x = float((c * d) + (a * b))
-print("VALOR A PAGAR: R$ %.2f" % x)
+
+codigo_p1, qtd_p1, vlr_p1 = map(float, input().split())
+
+codigo_p2, qtd_p2, vlr_p2 = map(float, input().split())
+
+f = (qtd_p1* vlr_p1) + (qtd_p2 * vlr_p2)
+print("VALOR A PAGAR: R$ %.2f" % f)
